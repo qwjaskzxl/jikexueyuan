@@ -1,0 +1,490 @@
+       
+          * {
+               margin:0;
+               padding:0;
+            }
+       
+        a{text-decoration:none;}    /*去除下划线*/
+         
+       	#header{
+    	    width:1019px;
+			height:60px;
+			background-color:white;
+            padding-left:250px;
+            padding-right:250px;  
+        } 
+
+
+          #image a{
+              
+              float:right;
+              margin-top:-42px;
+              margin-right:90px;
+              list-style-type:none;
+              position:relative;
+                            
+          }
+
+          #image ul:hover li {
+              display:block;
+
+          }
+
+        
+          #image ul li{
+              z-index:2;
+              margin-left:868px;  /*笨方法了*/
+              display:none;
+              
+          }
+
+
+         #nav{
+             width:550px;
+             margin-left:130px;
+             height:60px;
+             display:block;
+         }
+
+         #nav li {
+                display:block;
+                float: left;
+                margin-top:19px;
+                margin-left:45px;
+                position:relative;
+                
+            }
+         #nav li ul{
+             position:absolute; top:30px;left:0px;
+             display:none;  /*用来hover时显示*/
+             width:150px;
+             margin-top:-9px;
+             margin-left:-5px;
+         
+         }
+
+         #nav li ul li{
+             margin:0;
+             z-index:2;
+             background-color:white;
+             height:45px;
+             width:220px;
+             cursor:pointer;
+         }
+        #zi{
+
+            background-color:gray;
+        }
+            #nav li ul li span{
+                margin-top:20px;
+                display:block;
+                width:210px;
+                background-color:aliceblue;
+                margin-left:10px;
+                font-size:14px;
+                color:dimgray;
+              
+            }
+
+           #nav li ul li a{
+               margin-left:25px;
+               font-size:14px;
+               color:black;
+               transition:0.2s; 
+           }
+
+          #nav li:hover ul  {         /*注意写法*/
+              display:block;
+              
+          }
+
+          #nav li ul li a:hover{
+              color:rgb(53, 181, 88);
+          }
+             
+         
+
+
+         #container{
+           height:2100px;
+           padding-left:250px;
+           padding-right:250px;
+           margin-top:22px;         
+        }
+  
+            #top{
+                height:340px;
+                width:1004px;
+         
+            }
+
+   
+                #lside { width: 740px; height: 330px; border: 3px solid #333; overflow: hidden; position: relative;float:left;}
+                        #list { width: 5180px; height: 330px; position: absolute; z-index: 1;}
+                        #list img { float: left;}
+                        #buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 17.9px; left: 339px;}
+                        #buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 4px;}
+                        #buttons .on {  background-color:green;}
+                        .arrow { cursor: pointer; display: none; line-height: 80px; text-align: center; font-size: 35px; font-weight: bold; width: 40px; height: 80px;  position: absolute; z-index: 2; top: 130px; background-color: RGBA(0,0,0,.5); color: #fff;}
+                            .arrow:hover {
+                                background-color: RGBA(0,0,0,.01);
+                            }
+                        #container:hover .arrow { display: block;}
+                        #prev { left: 20px;}
+                        #next { right: 20px;}
+
+
+                #rside{
+                    height:330px;
+                    margin:5px;
+                    }
+                    #rside1{
+                        height:160px;
+                        width:240px;
+                        float:right;
+                        margin-bottom:10px;
+                        background-color:white;
+                    }
+                    .r1-1 {
+                        float:left;
+                        display:block;
+                        margin-left:32px;
+                        margin-top:30px;
+                        transition:0.7s; 
+                        color:rgb(53, 181, 88);
+                        border:solid;
+                        border-width:1px;
+                        background-color:white;
+                        width:80px;
+                        cursor:pointer;
+                        height:30px;
+                        font-size:14px;
+                        }
+
+                
+
+                    #rside1 span{
+                        font-size:14px;
+                        display:block;
+                        margin-left:102px;
+                        margin-top :24px;
+                        color:darkslategray;
+                    }
+              
+
+                    #rside1 .r1-1:hover /*触碰时效果*/  /*若要点击有效果 则active*/
+                   {
+                    color: white;
+                    background-color:rgb(53, 181, 88);                      
+                  }
+
+                    #rside2{
+                        height:160px;
+                        width:240px;
+                        float:right;
+                        margin-top:4px;
+                        cursor:pointer;
+                        }
+                   
+              #main1{
+                  height:160px;
+                  width:1004px;
+                  margin-top:25px;
+                  background-color:white;
+                  display:block;
+                 }
+
+              .main1-1{
+                  height:160px;
+                  width:230px;
+                  float:left;
+                  cursor:pointer;
+              }
+              .main1-2{
+                  height:160px;
+                  width:230px;
+                  float:left;
+                  cursor:pointer;
+              }
+              .main1-3{
+                  height:160px;
+                  width:230px;
+                  float:left;
+                  cursor:pointer;
+              }
+              .main1-4{
+                  height:160px;
+                  width:230px;
+                  float:left;
+                  cursor:pointer;
+              }
+              
+              #main1 a{
+                  
+                  color:grey;
+                  font-size:14px;
+                  left:12px;
+                  transition:0.2s; 
+                 
+              }
+               .main1-1 a{
+                  
+                  display:block;
+                  margin-top:25px;
+                  margin-left:8px;
+              }
+              .main1-2 a{
+                  
+                  display:block;
+                  margin-top:25px;
+                  margin-left:8px;
+              }
+              .main1-3 a{
+                 
+                  display:block;
+                  margin-top:25px;
+                  margin-left:42px;
+              }
+              .main1-4 a{
+                  
+                  display:block;
+                  margin-top:25px;
+                  margin-left:80px;
+              }
+             
+              #main1 a:hover{
+                  color:rgb(53, 181, 88);
+              }
+             
+
+              #main2{
+                  height:325px;
+                  width:1004px;
+                  margin-top:25px;
+                 
+              }
+                  #main2 a{
+                      color:dimgray;
+                      margin:14px;
+                  }
+                  #main2 span{
+                      font-size:21px;
+                      color:red;
+                      margin:14px;
+                  }
+
+                  .main2-1{
+                      height:330px;
+                      width:240px;
+                      float:left;
+                      background-color:white;
+                      cursor:pointer;
+                          
+                  }
+                
+
+                  .main2-2{
+                      height:330px;
+                      width:240px;
+                      float:left;
+                      margin-left:14px;
+                      background-color:white;
+                      cursor:pointer;
+                  }
+                  .main2-3{
+                      height:330px;
+                      width:240px;
+                      float:right;
+                      margin-left:14px;
+                      background-color:white;
+                      cursor:pointer;
+                  }
+                  .main2-4{
+                      height:330px;
+                      width:240px;
+                      float:right;
+                      background-color:white;
+                      cursor:pointer;
+                  }
+
+            #main234 {
+                display:block;
+                margin-top:35px;
+                font-size:20px;
+                color:dimgray;
+
+            }
+            #main3{
+                width:1004px;
+                height:270px;
+                margin-top:20px;
+                
+            }    
+
+                #left{
+                    width:500px;
+                    height:270px;
+                    float:left;
+                    cursor:pointer;
+                   
+                }
+                    #right {
+                        height:270px;
+                        width:500px;
+                        float:right;
+                    }
+                    
+                   .r1{
+                        height:130px;
+                        width:230px;
+                        float:right;            
+                        margin-left:20px;
+                        cursor:pointer;
+                       }
+
+                .r2{
+                      height:130px;
+                      width:230px;
+                      float:right;  
+                      margin-left:20px;
+                      cursor:pointer;
+                        
+                }
+                .r3{
+                    height:130px;
+                      width:230px;
+                      float:right;  
+                      margin-left:20px;
+                      margin-top:15px; 
+                         
+                }
+                .r4{
+                    height:130px;
+                      width:230px;
+                      float:right;  
+                      margin-left:20px;
+                      margin-top:15px;   
+                      cursor:pointer;
+                }
+
+
+            #main4{
+                height:330px;
+                width:1004px;
+                margin-top:20px;
+                
+            }
+
+            .main4-1{
+                height:150px;
+                width:150px;
+                float:left;
+                margin-left:20px;
+                margin-top:12px;
+                cursor:pointer;
+            }
+            .main4-2{
+                height:150px;
+                width:150px;
+                margin-top:12px;
+                float:left;
+                cursor:pointer;
+                
+            }
+
+            .main4-3{
+                height:150px;
+                width:150px;
+                margin-top:12px;
+                float:right;         
+                cursor:pointer;
+            }
+
+            #bottom{
+                width:1004px;
+                height:3000px;
+                margin-top:20px;
+                position:relative;
+                overflow:hidden;   /*overflow规定 内容溢出元素框时 发生的事情*/
+            }
+
+            #list2{
+                width:4016px;
+                height:253px;
+                position:absolute;
+                z-index:1;    
+                float:left;           
+            }
+
+            #buttons2 {
+                position:absolute;
+                height:20px;
+                width:20px;
+                z-index:2;
+                left:470px;
+            }
+
+            #buttons2 span{
+                cursor:pointer;
+                float:left;
+                border:1px solid gray;
+                height:12px;
+                width:20px;
+                border-radius:10%;         /*增大矩形边缘弧度*/
+                color:white;
+
+            }
+            #buttons2 span:hover{background-color: rgba(100, 200,10,1)}
+
+            #buttons2 .on  {margin-top:260px; }
+            
+     
+         #footer{
+            height:320px;
+            background-color:white;
+            padding-left:250px;
+            padding-right:250px;
+          }
+
+      
+        .f1 p {
+            display:block;
+            color:gray;
+            margin-top:50px;
+            
+        }
+        .f1{
+            width:250px;
+            height:200px;
+            font-size:14px;
+            float:left;
+            padding-top:22px;
+        }
+        .f2 {
+            display:block;
+            width:160px;
+            float:left;
+            
+        }
+
+       .f2 span {
+           display:block;
+           color:dimgray;
+           margin-top:20px;
+           font-size:20px;
+       }
+       .f2  p {
+           display:block;
+           margin-top:20px;
+           color:gray;
+           font-size:13px;
+           transition:0.2s;
+           cursor:pointer
+
+       }
+       .f2 p:hover{
+           color: rgb(53, 181, 88);
+       }
+      
+        
+    
